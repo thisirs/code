@@ -1,5 +1,5 @@
 """
-Main programm to partition image using binary partition tree
+Main program to partition images using a binary partition tree
 """
 import logging
 import os
