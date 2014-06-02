@@ -21,7 +21,7 @@ class BinaryTreeFactory(object):
         :type criterion: int
         :return: the tree after merging
         :rtype: list"""
-        logging.info("partition image with Binary Partition Tree, criterion: " + str(criterion))
+        logging.info("partition image with Binary Partition Tree, criterion: %s" % criterion)
         #initialization
         g = initRegionGraphe(image)
         temp = 0
@@ -38,7 +38,7 @@ class BinaryTreeFactory(object):
             # merge criterion : minimal distance
             logging.info("test criterion")
             if d < criterion:
-                logging.debug("test pass (" + str(d) + "<" + str(criterion) + ")")
+                logging.debug("test pass (%d<%d)" % (d, criterion))
                 # the two nodes to merge
                 #region1 = dicomin["r1"]
                 #region2 = dicomin["r2"]
